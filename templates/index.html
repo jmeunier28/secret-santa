@@ -1,0 +1,12 @@
+<!--index.html-->
+
+<!--Embed the header.html template at this location-->
+{{ template "header.html" .}}
+
+        <a href="/people/view/santa">
+            *<!--Display a button to click to roll for secret santa -->*/
+            <h2>{{ .pick }}</h2>
+        </a>
+
+<!--Embed the footer.html template at this location-->
+{{ template "footer.html" .}}
